@@ -62,9 +62,15 @@ function actualizaTarea(id) {
 }
 
 const asignaID=(arreglo)=>{
-    const ordenado = arreglo.sort((x,y) =>  x.id - y.id);
-    return ordenado[ordenado.length-1].id + 1;
+    let id=1
+
+    if (arreglo.length>0){
+        const ordenado = arreglo.sort((x,y) =>  x.id - y.id);
+        id= ordenado[ordenado.length-1].id + 1;
+    }
+    return id
 }
+   
 
 btnAgregar.addEventListener("click", () => {
     const tarea = tareaInput.value
