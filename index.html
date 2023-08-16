@@ -13,25 +13,23 @@
         <div class="card ">
             <h5 class="card-header">Nueva Tarea</h5>
             <div class="card-body d-flex col-lg gap-1 justify-content-center align-content-center">
-                <input class="form-control" type="text" id="taskInput" placeholder="Agregar tarea">
-                <button class="btn btn-secondary"  >Agregar</button>
+                <input class="form-control" type="text" id="tareaInput" placeholder="Agregar tarea">
+                <button class="btn btn-secondary" id="btnAgregar">Agregar</button>
             </div>
             <div class="card-footer d-flex col-lg gap-1 justify-content-center">
-               <p class="card-text">Total: <span>0</span></p>
-               <p lass="card-text">Realizadas:<span>0</span></p>
+               <p class="card-text">Total: <span id="spnTotal">0</span></p>
+               <p lass="card-text">Realizadas:<span id="spnRealizadas">0</span></p>
             </div>
         </div>
         <br>
         <div class="card ">
             <ul class="list-group list-group-horizontal">
-                <li class="list-group-item">#ID</li>
-                <li class="list-group-item">Tarea</li>
-                <li class="list-group-item">Listo</li>
-                <li class="list-group-item">Eliminar</li>
+                <li class="list-group-item anchoID">#ID</li>
+                <li class="list-group-item anchoTarea ">Tarea</li>
+                <li class="list-group-item anchoEstado">Listo</li>
+                <li class="list-group-item anchoEliminar">Eliminar</li>
             </ul>
-            <ul class="list-group list-group-horizontal">
-                <li id="tarea"></li>
-            </ul>
+            <div id="listaDeTareas"> </div>
            
         </div>
     </div>

@@ -6,3 +6,16 @@ body{
     width: 600px;
     height: 600px;
 }
+
+.anchoTarea{
+    width: 330px;
+}
+.anchoID{
+    width: 70px;
+}
+.anchoEstado{
+    width: 70px;
+}
+.anchoEliminar{
+    width: 140px;
+}
