@@ -63,10 +63,10 @@ function actualizaTarea(id) {
 
 const asignaID=(arreglo)=>{
     let id=1
-
-    if (arreglo.length>0){
-        const ordenado = arreglo.sort((x,y) =>  x.id - y.id);
-        id= ordenado[ordenado.length-1].id + 1;
+    let paso=[...arreglo]
+    if (paso.length>0){
+        const ordenado = paso.sort((x,y) => y.id - x.id)  ;
+        id= ordenado[0].id + 1;
     }
     return id
 }
